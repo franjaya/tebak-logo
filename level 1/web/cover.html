@@ -17,7 +17,36 @@ background-color:#f44336;
 background-image:url("hi.jpg");
 background-repeat:no-repeat;
 }
+.sz1{
+margin-top:10px;
+font-size:20;
+width:400px;
+height:50px;
+color:darkgreen;
+margin-left:480px;
+border-radius:15px;
+background-color:blue;
+}
+.sz1:hover{
 
+background-image:url("hi.jpg");
+background-repeat:no-repeat;
+}
+.sz2{
+margin-top:10px;
+font-size:20;
+width:400px;
+height:50px;
+color:darkgreen;
+margin-left:480px;
+border-radius:15px;
+background-color:purple;
+}
+.sz2:hover{
+
+background-image:url("hi.jpg");
+background-repeat:no-repeat;
+}
 </style>
 <script language="javascript">
 
@@ -27,12 +56,25 @@ location="stage.html"
 
 
 }
+function check1(form)
+{
+location="tebak gambar/1.html"
+
+
+}
+function check2(form)
+{
+location="tebak kata/tebak kata.html"
+
+
+}
 </script>
 </head>
 <body background="bg1.jpg">
 <form>
 <input type="button" name="but" class="sz"value="logo quiz" size="50"onclick="check(this.form)">
-
+<input type="button" name="but1" class="sz1"value="tebak gambar" size="50"onclick="check1(this.form)">
+<input type="button" name="but2" class="sz2"value="tebak kata" size="50"onclick="check2(this.form)">
 </form>
 
 </body>
