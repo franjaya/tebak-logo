@@ -17,7 +17,7 @@ font-size:25;
 .ti{
 
 font-size:25;
-margin-left:20px;
+
 }
 .em{
 
@@ -40,6 +40,7 @@ font-size:25;
 
 font-size:25;
 }
+
 
 .love{
 width:50px;
@@ -335,7 +336,7 @@ height:52px;
 margin-left:780px;
 }
 .gmbr{
-background-image:url("ea sport.jpg");
+background-image:url("emi.jpg");
 width:200px;
 height:280px;
 margin-top:200px;
@@ -346,13 +347,13 @@ margin-left:550px;
 
 function check(form)
 {
-if(form.satu.value=="e" && form.dua.value=="a" && form.tiga.value=="s" && form.empat.value=="p" && form.lima.value=="o" && form.enam.value=="r" && form.tujuh.value=="t")
+if(form.satu.value=="e" && form.dua.value=="m" && form.tiga.value=="i" && form.empat.value=="r" && form.lima.value=="a" && form.enam.value=="t" && form.tujuh.value=="e" &&  form.delapan.value=="s")
 {
-alert("iya benar sekali.ea sport merupakah sebah perusahaan multinasional yang bermarkas di burnaby british columbia,kanada.Didirikan pada tahun  1991.Menghasilkan berbagai macam produk game.Perusahaan ini memperkerjakan 8.000 pekerjanya pada tahun 2010.")
-location="quiz 11.html";
+alert("iya,Emirates merupakan sebuah maskapai penerbangan yang berbasis di Dubai , Uni Emirat Arab . Maskapai ini merupakan anak perusahaan dari Emirates Group , yang dimiliki oleh pemerintah Dubai 's Investment Corporation dari Dubai . [3] Ini adalah maskapai penerbangan terbesar di Timur Tengah , operasi lebih dari 3.300 penerbangan per minggu dari pusatnya di Dubai Bandara internasional , lebih dari 148 kota di 78 negara di enam benua. [4] kegiatan Cargo yang dilakukan oleh Emirates SkyCargo ")
+location="stage.html"
 
 }
-else if(form.satu.value!="e" || form.dua.value!="a" || form.tiga.value!="s" || form.empat.value!="p" || form.lima.value!="o" || form.enam.value!="r" || form.tujuh.value!="t")
+else if(form.satu.value!="e"||form.dua.value!="m"||form.tiga.value!="i"||form.empat.value!="r"||form.lima.value!="a"||form.enam.value!="t"||form.tujuh.value!="e"||form.delapan.value!="s")
 {
 {alert("Salah")
 form.satu.value="";
@@ -362,6 +363,7 @@ form.empat.value="";
 form.lima.value="";
 form.enam.value="";
 form.tujuh.value="";
+form.delapan.value="";
 
 
 }
@@ -382,7 +384,7 @@ document.getElementById("bto").disabled = "true";
 function tekan1(form)
 {alert("your hint just get two")
 document.getElementById('ui').value='e';
-document.getElementById('ha').value='s';
+document.getElementById('ha').value='i';
 document.getElementById("myi").style.display = "none";
 document.getElementById("hst").style.display = "none";
 if(document.getElementById("hst").style.display == "none" && document.getElementById("myi").style.display == "none")
@@ -395,12 +397,13 @@ document.getElementById("buto").disabled = "true";
 function tekan2(form)
 {alert("this is the answer")
 document.getElementById('ui').value='e';
-document.getElementById('hi').value='a';
-document.getElementById('ha').value='s';
-document.getElementById('hu').value='p';
-document.getElementById('he').value='o';
-document.getElementById('ho').value='r';
-document.getElementById('hp').value='t';
+document.getElementById('hi').value='m';
+document.getElementById('ha').value='i';
+document.getElementById('hu').value='r';
+document.getElementById('he').value='a';
+document.getElementById('ho').value='t';
+document.getElementById('hp').value='e';
+document.getElementById('ht').value='s';
 document.getElementById("myi").style.display = "none";
 document.getElementById("hst").style.display = "none";
 document.getElementById("ese").style.display = "none";
@@ -412,7 +415,7 @@ document.getElementById('hu').value='';
 document.getElementById('he').value='';
 document.getElementById('ho').value='';
 document.getElementById('hp').value='';
-
+document.getElementById('ht').value='';
 document.getElementById("myi").style.display = "";
 document.getElementById("hst").style.display = "";
 document.getElementById("ese").style.display = "";
@@ -493,6 +496,8 @@ location="stage.html"
 <input type="text"  name="lima" class="li" id="he" size="1">
 <input type="text"  name="enam" class="en" id="ho" size="1">
 <input type="text"  name="tujuh" class="tuj" id="hp" size="1">
+<input type="text"  name="delapan" class="dela" id="ht" size="1">
+
 
 <input type="button" name="but" class="sz"value="check" size="1"onclick="check(this.form)">
 

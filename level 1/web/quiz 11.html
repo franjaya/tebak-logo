@@ -17,7 +17,7 @@ font-size:25;
 .ti{
 
 font-size:25;
-margin-left:20px;
+
 }
 .em{
 
@@ -38,6 +38,9 @@ font-size:25;
 }
 .dela{
 
+font-size:25;
+}
+.sembi{
 font-size:25;
 }
 
@@ -335,7 +338,7 @@ height:52px;
 margin-left:780px;
 }
 .gmbr{
-background-image:url("ea sport.jpg");
+background-image:url("uni.jpg");
 width:200px;
 height:280px;
 margin-top:200px;
@@ -346,13 +349,13 @@ margin-left:550px;
 
 function check(form)
 {
-if(form.satu.value=="e" && form.dua.value=="a" && form.tiga.value=="s" && form.empat.value=="p" && form.lima.value=="o" && form.enam.value=="r" && form.tujuh.value=="t")
+if(form.satu.value=="u" && form.dua.value=="n" && form.tiga.value=="i" && form.empat.value=="c" && form.lima.value=="r" && form.enam.value=="e" && form.tujuh.value=="d" &&  form.delapan.value=="i" && form.sembilan.value=="t")
 {
-alert("iya benar sekali.ea sport merupakah sebah perusahaan multinasional yang bermarkas di burnaby british columbia,kanada.Didirikan pada tahun  1991.Menghasilkan berbagai macam produk game.Perusahaan ini memperkerjakan 8.000 pekerjanya pada tahun 2010.")
-location="quiz 11.html";
+alert("iya,UniCredit Group adalah perusahaan global perbankan dan jasa keuangan Italia. Jaringan yang mencakup 50 pasar di 17 negara, dengan lebih dari 8.500 cabang dan lebih dari 147.000 karyawan. [3] posisi strategis di Barat dan Eropa Timur memberikan kelompok salah satu pangsa pasar tertinggi di kawasan ini. Perusahaan ini adalah komponen dari Euro Stoxx 50 indeks pasar saham .")
+location="stage.html"
 
 }
-else if(form.satu.value!="e" || form.dua.value!="a" || form.tiga.value!="s" || form.empat.value!="p" || form.lima.value!="o" || form.enam.value!="r" || form.tujuh.value!="t")
+else if(form.satu.value!="u"||form.dua.value!="n"||form.tiga.value!="i"||form.empat.value!="c"||form.lima.value!="r"||form.enam.value!="e"||form.tujuh.value!="d"||form.delapan.value!="i"|| form.sembilan.value!="t")
 {
 {alert("Salah")
 form.satu.value="";
@@ -362,7 +365,8 @@ form.empat.value="";
 form.lima.value="";
 form.enam.value="";
 form.tujuh.value="";
-
+form.delapan.value="";
+form.sembilan.value="";
 
 }
 
@@ -370,7 +374,7 @@ form.tujuh.value="";
 }
 function tekan(form)
 {alert("your hint just get one,one letter")
-document.getElementById('ui').value='e';
+document.getElementById('ui').value='u';
 document.getElementById("myi").style.display = "none";
 if(document.getElementById("myi").style.display == "none")
 {
@@ -381,8 +385,8 @@ document.getElementById("bto").disabled = "true";
 }
 function tekan1(form)
 {alert("your hint just get two")
-document.getElementById('ui').value='e';
-document.getElementById('ha').value='s';
+document.getElementById('ui').value='u';
+document.getElementById('ha').value='i';
 document.getElementById("myi").style.display = "none";
 document.getElementById("hst").style.display = "none";
 if(document.getElementById("hst").style.display == "none" && document.getElementById("myi").style.display == "none")
@@ -394,13 +398,15 @@ document.getElementById("buto").disabled = "true";
 }
 function tekan2(form)
 {alert("this is the answer")
-document.getElementById('ui').value='e';
-document.getElementById('hi').value='a';
-document.getElementById('ha').value='s';
-document.getElementById('hu').value='p';
-document.getElementById('he').value='o';
-document.getElementById('ho').value='r';
-document.getElementById('hp').value='t';
+document.getElementById('ui').value='u';
+document.getElementById('hi').value='n';
+document.getElementById('ha').value='i';
+document.getElementById('hu').value='c';
+document.getElementById('he').value='r';
+document.getElementById('ho').value='e';
+document.getElementById('hp').value='d';
+document.getElementById('ht').value='i';
+document.getElementById('hq').value='t';
 document.getElementById("myi").style.display = "none";
 document.getElementById("hst").style.display = "none";
 document.getElementById("ese").style.display = "none";
@@ -412,7 +418,8 @@ document.getElementById('hu').value='';
 document.getElementById('he').value='';
 document.getElementById('ho').value='';
 document.getElementById('hp').value='';
-
+document.getElementById('ht').value='';
+document.getElementById('hq').value='';
 document.getElementById("myi").style.display = "";
 document.getElementById("hst").style.display = "";
 document.getElementById("ese").style.display = "";
@@ -493,6 +500,8 @@ location="stage.html"
 <input type="text"  name="lima" class="li" id="he" size="1">
 <input type="text"  name="enam" class="en" id="ho" size="1">
 <input type="text"  name="tujuh" class="tuj" id="hp" size="1">
+<input type="text"  name="delapan" class="dela" id="ht" size="1">
+<input type="text"  name="sembilan" class="sembi" id="hq" size="1">
 
 <input type="button" name="but" class="sz"value="check" size="1"onclick="check(this.form)">
 

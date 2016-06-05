@@ -4,43 +4,23 @@
 <style type="text/css">
 
 .st{
-margin:20px;
 margin-top:50px;
-margin-left:400px;
+margin-left:510px;
 font-size:25;
 }
 
 .du{
-margin-left:-18px;
 font-size:25;
 }
 .ti{
 
 font-size:25;
-margin-left:20px;
+
 }
 .em{
 
 font-size:25;
-
 }
-.li{
-font-size:25;
-
-}
-.en{
-font-size:25;
-
-}
-.tuj{
-
-font-size:25;
-}
-.dela{
-
-font-size:25;
-}
-
 .love{
 width:50px;
 height:50px;
@@ -61,6 +41,7 @@ margin-top:-50px;
 }
 .sz{
 font-size:25;
+margin-left:20px;
 }
 .unit{
 animation:snow 20s infinite;
@@ -335,7 +316,7 @@ height:52px;
 margin-left:780px;
 }
 .gmbr{
-background-image:url("ea sport.jpg");
+background-image:url("ik.jpg");
 width:200px;
 height:280px;
 margin-top:200px;
@@ -346,22 +327,19 @@ margin-left:550px;
 
 function check(form)
 {
-if(form.satu.value=="e" && form.dua.value=="a" && form.tiga.value=="s" && form.empat.value=="p" && form.lima.value=="o" && form.enam.value=="r" && form.tujuh.value=="t")
+if(form.satu.value=="i" && form.dua.value=="k" && form.tiga.value=="e" && form.empat.value=="a")
 {
-alert("iya benar sekali.ea sport merupakah sebah perusahaan multinasional yang bermarkas di burnaby british columbia,kanada.Didirikan pada tahun  1991.Menghasilkan berbagai macam produk game.Perusahaan ini memperkerjakan 8.000 pekerjanya pada tahun 2010.")
-location="quiz 11.html";
+alert("iya benar sekali.IKEA adalah multinasional kelompok perusahaan yang mendesain dan menjual siap-merakit furnitur (seperti tempat tidur, kursi dan meja), peralatan dan aksesoris rumah.")
+location="stage.html";
 
 }
-else if(form.satu.value!="e" || form.dua.value!="a" || form.tiga.value!="s" || form.empat.value!="p" || form.lima.value!="o" || form.enam.value!="r" || form.tujuh.value!="t")
+else if(form.satu.value!="i" || form.dua.value!="k" || form.tiga.value!="e" || form.empat.value!="a")
 {
 {alert("Salah")
 form.satu.value="";
 form.dua.value="";
 form.tiga.value="";
 form.empat.value="";
-form.lima.value="";
-form.enam.value="";
-form.tujuh.value="";
 
 
 }
@@ -370,7 +348,7 @@ form.tujuh.value="";
 }
 function tekan(form)
 {alert("your hint just get one,one letter")
-document.getElementById('ui').value='e';
+document.getElementById('ui').value='i';
 document.getElementById("myi").style.display = "none";
 if(document.getElementById("myi").style.display == "none")
 {
@@ -381,8 +359,8 @@ document.getElementById("bto").disabled = "true";
 }
 function tekan1(form)
 {alert("your hint just get two")
-document.getElementById('ui').value='e';
-document.getElementById('ha').value='s';
+document.getElementById('ui').value='i';
+document.getElementById('ha').value='e';
 document.getElementById("myi").style.display = "none";
 document.getElementById("hst").style.display = "none";
 if(document.getElementById("hst").style.display == "none" && document.getElementById("myi").style.display == "none")
@@ -394,13 +372,10 @@ document.getElementById("buto").disabled = "true";
 }
 function tekan2(form)
 {alert("this is the answer")
-document.getElementById('ui').value='e';
-document.getElementById('hi').value='a';
-document.getElementById('ha').value='s';
-document.getElementById('hu').value='p';
-document.getElementById('he').value='o';
-document.getElementById('ho').value='r';
-document.getElementById('hp').value='t';
+document.getElementById('ui').value='i';
+document.getElementById('hi').value='k';
+document.getElementById('ha').value='e';
+document.getElementById('hu').value='a';
 document.getElementById("myi").style.display = "none";
 document.getElementById("hst").style.display = "none";
 document.getElementById("ese").style.display = "none";
@@ -409,10 +384,6 @@ document.getElementById('ui').value='';
 document.getElementById('hi').value='';
 document.getElementById('ha').value='';
 document.getElementById('hu').value='';
-document.getElementById('he').value='';
-document.getElementById('ho').value='';
-document.getElementById('hp').value='';
-
 document.getElementById("myi").style.display = "";
 document.getElementById("hst").style.display = "";
 document.getElementById("ese").style.display = "";
@@ -490,10 +461,6 @@ location="stage.html"
 <input type="text" name="dua" class="du" id="hi"size="1">
 <input type="text" name="tiga" class="ti" id="ha"size="1">
 <input type="text" name="empat" class="em" id="hu" size="1">
-<input type="text"  name="lima" class="li" id="he" size="1">
-<input type="text"  name="enam" class="en" id="ho" size="1">
-<input type="text"  name="tujuh" class="tuj" id="hp" size="1">
-
 <input type="button" name="but" class="sz"value="check" size="1"onclick="check(this.form)">
 
 
