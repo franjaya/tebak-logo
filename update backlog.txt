@@ -1,0 +1,8 @@
+1.pembuatan file html
+2.memasukkan css ke dalam file html
+3.memasukkan code javascript
+4.pemilihan permainan.Ada 3 jenis permainan
+5.pemilihan stage dari 1 sampai 20 untuk logo quiz
+6.mengedit html
+6.mengubah code html menjadi jade
+7.memasukkan semua file html ke dalam bespoke
