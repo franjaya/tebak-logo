@@ -1,0 +1,105 @@
+<html lang="ko">
+  <head>
+				<title>Tebak Gambar</title>
+  	<style type="text/css">
+        body{
+       	background-image:url("1.jpg");
+       	margin: 0px;
+       }
+	   #wrapper{
+       	background: White;
+       	width: 960px;
+       	margin: 0 auto;
+       	padding:15px 10px 0px;
+       }
+
+       #headerImage{
+       weight:920px;
+	   height:50px;
+	   font-family:arial;
+	   font-weight: bold;
+	   font-size: 59px;
+	   padding: 40px;
+	   color: green;
+	   }
+	   #content{
+	   border: 1px dashed #cecec2;
+	   }
+#maincontent{
+width: 100px;
+height: 100px;
+margin-left: 350px;
+margin-top : 50px;}
+
+.sp{
+margin:20px;
+margin-left:300px;
+font-size:25;
+margin-top:150px;
+}
+
+.sz{
+font-size:20;
+}
+.love{
+width:50px;
+height:50px;
+margin-left:50px;
+margin-top:-50px;
+}
+
+@keyframes snow{
+from{top:-10px;left:1200px;transform:rotatey(90deg);}
+to{top:1300px;left:1100px;transform:rotatey(180deg);}
+}
+</style>
+<script language="javascript">
+function check(form)
+{if(form.satu.value=="fermentasi anggur")
+{
+alert("Correct")
+location="7.html"
+}
+else if(form.satu.value!="fermentasi anggur")
+{
+{alert("game over!!!!")
+document.getElementById("myi").style.display = "none";
+location="1.html"
+}
+
+}
+}
+</script>
+	   </style>
+  </head>
+  <body>
+    <div id="wrapper">
+		<div id="header">
+
+         	<div id="headerImage">
+         	<div align ="right"> Tebak Gambar </div>
+			 <div class="love"><img id="myi"src="love.png"></div>
+         	</div> 
+        </div> 
+
+		<div id="content">
+		<div id="maincontent">
+		<img  src="fermentasi anggur.png" height="220px" /></div>
+<audio autoplay>
+ <source src="MBLAQ - MONA LISA.mp3" type="audio/mpeg">
+</audio> 
+
+<form>
+
+
+<input type="text" name="satu" class="sp" size="25">
+
+<input type="button" name="but" class="sz"value="Cek"  size="1"onclick="check(this.form)">
+
+
+</form>
+</div>
+	</div>
+	</div>
+</body>
+</html>		
