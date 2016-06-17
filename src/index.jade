@@ -1,0 +1,62 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title permainan logo quiz dan tebak kata
+    style(type='text/css').
+      .hai{
+      margin-top:230px;
+      }
+      .hai:hover{
+      background-color:white;
+      }
+      .ui{
+      background-image:url("sky1.jpg");
+      }
+      .u{
+      background-color:black;
+      color:blue;
+      }
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+  body
+    audio(autoplay='')
+      source(src='naruto-shippuden-ost-3-track-20-sasuke-s-theme-2nd-version-improved.mp3', type='audio/mpeg')
+    article
+      section.u
+        .aaa
+          h2 Tebak logo dan kata
+      section.u
+        .aaa
+          h2
+            | Nama Anggota Kelompok:
+            br
+            br
+            | 		1. aldo fernando
+            br
+            | 		2. angsono putra
+            br
+            | 		3. hendry
+            br
+            | 		4. franjaya
+            br
+            | 		5.agus rianto
+      section.u
+        .aaa
+          h2
+            | tebak kata ada 1 soal yang sangat sulit ditebak.
+            br
+            | 		tebak logo ini memiliki 20 soal
+      section.ui
+        .hai
+          h2
+            a(href='cover.html', style='color:red') play game
+      section.u
+        h3
+          .aaa(style='color:blue')
+            | cara maen : anda cukup menebak dan menjawab dan juga mengisi huruf yang disediakan di masing-masing kotak.
+            | selanjutnya anda akan diberi 3 hint ,hint pertama anda akan diberikan 1 huruf,1 nyawa hilang dan hint kedua 2 huruf akan diberikan,2 nyawa hilang,hint 3 ,huruf akan diberi semuanya ,game over,setelah itu anda akan ulang dari stage pertama
+      section.u
+        .bbb
+          h2 terima kasih atas perhatiannya
+    script(src='build/build.js')
